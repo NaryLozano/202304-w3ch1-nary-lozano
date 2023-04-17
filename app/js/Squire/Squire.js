@@ -7,7 +7,7 @@ class Squire extends Character {
 
   constructor(characterData, kissAssLevel, serves) {
     super(characterData);
-    this.kissAssLevel = this.kissAssLevelFilter(kissAssLevel);
+    this.kissAssLevel = this.#kissAssLevelFilter(kissAssLevel);
 
     if (serves instanceof Fighter) {
       this.serves = serves;
