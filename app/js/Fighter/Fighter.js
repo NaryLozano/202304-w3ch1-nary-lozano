@@ -7,7 +7,7 @@ class Fighter extends Character {
   constructor(characterData, weapon, dexterity) {
     super(characterData);
     this.weapon = weapon;
-    this.dexterity = this.filterDexterity(dexterity);
+    this.dexterity = this.#filterDexterity(dexterity);
   }
 
   communicate() {
