@@ -1,7 +1,7 @@
-import King from "./King/King.js";
-import Fighter from "./Fighter/Fighter.js";
-import Advisor from "./Advisor/Advisor.js";
-import Squire from "./Squire/Squire.js";
+import King from "./characters/King/King.js";
+import Advisor from "./characters/Advisor/Advisor.js";
+import Fighter from "./characters/Fighter/Fighter.js";
+import Squire from "./characters/Squire/Squire.js";
 
 const joffreyCharacterData = {
   name: "Joffrey",
@@ -43,3 +43,5 @@ const tyrion = new Advisor(tyrionCharacterData, daenerys);
 const bronn = new Squire(bronnCharacterData, 0, jaime);
 
 export const characters = [jaime, joffrey, daenerys, tyrion, bronn];
+
+export default characters;

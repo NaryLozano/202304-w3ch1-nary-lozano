@@ -5,7 +5,7 @@ class Button extends Component {
   text;
 
   constructor(parentElement, text, type) {
-    super(parentElement, "button");
+    super(parentElement, "button", "character__action btn");
     this.text = text;
     this.type = type;
     this.renderHtml();
