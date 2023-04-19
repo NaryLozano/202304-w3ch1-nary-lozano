@@ -1,5 +1,4 @@
 import Component from "../Component/Component.js";
-import King from "../../characters/King/King.js";
 
 class CardComponent extends Component {
   characters;
@@ -93,11 +92,35 @@ class CardComponent extends Component {
               ? `<i class="emoji">🗡 </i>`
               : ""
           }
-          <div class="communications">
-    <p class="communications__text display-1">A sentence someone says</p>
-    <img class="communications__picture" src="img/no-one.jpg" alt="Name and family of who speaks" />
-  </div>
-    `;
+         <div class="communications">
+
+              <p class="communications__text display-1">${this.characters.communicate()}</p>
+              <img class="communications__picture" src="../../img/${
+                this.characters.characterData.imageSource
+              }"' alt="Name and family of who speaks" />
+            </div>
+                `;
+
+    /*  const killButton = this.element.querySelector(".kill");
+    const speakButton = this.element.querySelector(".speak");
+
+    killButton.addEventListener("click", () => {
+      this.characters.rotateImage();
+      this.characters.die();
+
+      this.renderHtml();
+    });
+
+    speakButton.addEventListener("click", () => {
+      const communicationContainer =
+        this.element.querySelector(".communications");
+
+      communicationContainer.classList.add("on");
+
+      setTimeout(() => {
+        communicationContainer.classList.remove("on");
+      }, 2000);*/
   }
 }
+
 export default CardComponent;
