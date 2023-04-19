@@ -93,7 +93,6 @@ class CardComponent extends Component {
               ? `<i class="emoji">🗡 </i>`
               : ""
           }
-        </div>
           <div class="communications">
     <p class="communications__text display-1">A sentence someone says</p>
     <img class="communications__picture" src="img/no-one.jpg" alt="Name and family of who speaks" />
